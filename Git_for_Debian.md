@@ -24,8 +24,11 @@ After it downloads, untar the file and switch into that directory:
 cd git-1.9.4
 
 Global Install
-This is a slightly different and more complex process. But do not worry, weary traveler! If you wish to perform a global install it's a two-step process: 1) Install it once as yourself 
-2) Install it once as root.
+This is a slightly different and more complex process. But do not worry, weary traveler! If you wish to perform a global install it's a two-step process:  
+
+1. Install it once as yourself 
+2. Install it once as root.
+
 >make prefix=/usr/local all
 sudo make prefix=/usr/local install
 
