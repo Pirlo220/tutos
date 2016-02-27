@@ -3,7 +3,6 @@
 >apt-get install curl
 >curl -sL https://deb.nodesource.com/setup | bash -
 
-
 Then install with Debian (as root):
 >apt-get install nodejs nodejs-legacy
 
