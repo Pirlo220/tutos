@@ -51,3 +51,40 @@ Changes already added to the index, as well as new files, will be kept.
 Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:	
 >git fetch origin
 >git reset --hard origin/master
+
+##El uso de GIT STASH
+
+@telecristy
+https://www.codejobs.biz/es/blog/2015/11/06/el-uso-de-git-stash
+
+Git Stash es uno de los comandos que nos permite guardar las modificaciones locales en forma temporal y regresa el directorio de trabajo a un estado inicial (sin ningun cambio).
+
+ 
+Por ejemplo, podemos usar git stash cuando estamos trabajando en un proyecto que tiene una funcionalidad dentro de una rama hija diferente y master cómo rama padre del proyecto. Supongamos que tenemos la rama “tarea#1” y estamos trabajando en ella, pero surge que debemos parar nuestro trabajo en esta rama por un rato porque se tiene que hacer un cambio en la rama master (padre). Lo que sucede con git es que siempre tenemos que hacer un commit para poder cambiar de rama, aquí es donde entra Git Stash cómo buena práctica al momento de estar desarrollando. 
+
+Nos encontramos en la rama “tarea#1” y si hacemos un git status veremos los cambios que hemos hecho dentro de esa rama. 
+
+![picture alt](https://www.codejobs.biz/public/images/blog/original/356a192b7913b04.png)
+
+Ahora bien, para cambiarnos de rama sin problema alguno lo único que tenemos que hacer es git stash:
+
+![picture alt](https://www.codejobs.biz/public/images/blog/original/da4b9237bacccdf.png)
+
+Si hacemos de nuevo un git status sobre la rama “tarea#1” veremos que no hay nada, todo está limpio, y ahora puedo fácilmente cambiar de rama sin haber hecho ningun commit.
+
+![picture alt](https://www.codejobs.biz/public/images/blog/original/77de68daecd823b.png)
+
+Para ver nuestra lista de stash ejecutamos el comando git stash list
+
+![picture alt](https://www.codejobs.biz/public/images/blog/original/1b6453892473a46.png)
+
+Ahora bien, si queremos asignar un nombre a nuestro stash debemos utilizar el comando git stash save “Nombre de mi stash”.
+
+Por ahora tengo dos stash en mi lista con los índices 0(es el cambio más reciente) y 1:
+
+![picture alt](https://www.codejobs.biz/public/images/blog/original/c1dfd96eea8cc2b.png)
+
+Para obtener de nuevo los cambios que había hecho en mi rama y seguir trabajando en ello, hago git stash pop stash@{0} :
+
+![picture alt](https://www.codejobs.biz/public/images/blog/original/902ba3cda188380.png)
+
