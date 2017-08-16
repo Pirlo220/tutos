@@ -94,7 +94,7 @@ Para obtener de nuevo los cambios que había hecho en mi rama y seguir trabajand
 
 ![picture alt](https://www.codejobs.biz/public/images/blog/original/902ba3cda188380.png)
 
-##gitignore update and things
+## gitignore update and things
 To untrack a single file that has already been added/initialized to your repository, i.e., stop tracking the file but not delete it from your system use: 
 >git rm --cached filename
 
