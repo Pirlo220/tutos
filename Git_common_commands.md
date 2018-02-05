@@ -1,5 +1,10 @@
 #My Most used Git Commands
 
+Git was developed by Linux Tolvard
+Repository contains files, history, config managed by Git
+The Three states of Git: 
+Working directory, Staging area (Git Index), commit (Git Repository (history))
+
 Create a new repository on GitHub.
 In the Command prompt, change the current working directory to your local project.
 Initialize the local directory as a Git repository.
