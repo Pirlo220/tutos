@@ -2,7 +2,7 @@
 
 There are several states of Git dat:
 + Working Directory
-+ Staging Area
++ Staging Area (Git Index)
 + Repository (.git folder)
 + Remote repository
 
@@ -15,6 +15,9 @@ Configuring
 Create a complete copy of a repository:
 > git clone https://your.git.repository.com
 
+Git was developed by Linux Tolvard
+Repository contains files, history, config managed by Git
+
 Create a new repository on GitHub.
 In the Command prompt, change the current working directory to your local project.
 Initialize the local directory as a Git repository.
@@ -22,6 +25,9 @@ Initialize the local directory as a Git repository.
 
 List the files you've changed and those you still need to add or commit:	
 >git status
+
+List the files modified since the last commit
+>git diff --name-only
 
 Add the files in your new local repository. This stages them for the first commit.
 >git add .
@@ -67,6 +73,9 @@ Instead, to drop all your local changes and commits, fetch the latest history fr
 >git fetch origin
 >git reset --hard origin/master
 
+## Clone a repository
+>git clone https://github.com/Pirlo220/matrixes.git
+
 ##El uso de GIT STASH
 
 @telecristy
@@ -103,3 +112,18 @@ Para obtener de nuevo los cambios que había hecho en mi rama y seguir trabajand
 
 ![picture alt](https://www.codejobs.biz/public/images/blog/original/902ba3cda188380.png)
 
+## gitignore update and things
+To untrack a single file that has already been added/initialized to your repository, i.e., stop tracking the file but not delete it from your system use: 
+>git rm --cached filename
+
+To untrack every file that is now in your .gitignore:
+
+First commit any outstanding code changes, and then, run this command:
+
+>git rm -r --cached .
+This removes any changed files from the index(staging area), then just run:
+
+>git add .
+Commit it:
+
+>git commit -m ".gitignore is now working"
