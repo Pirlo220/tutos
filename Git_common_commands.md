@@ -1,5 +1,11 @@
 #My Most used Git Commands
 
+There are several states of Git dat:
++ Working Directory
++ Staging Area
++ Repository (.git folder)
++ Remote repository
+
 Configuring 
 
 > git config --global user.name "Your Name"
