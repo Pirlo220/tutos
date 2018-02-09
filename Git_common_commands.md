@@ -1,5 +1,14 @@
 #My Most used Git Commands
 
+Configuring 
+
+> git config --global user.name "Your Name"
+> git config --global user.email "YourEmail@mm.com"
+> git config --global --list (In order to confirm)
+
+Create a complete copy of a repository:
+> git clone https://your.git.repository.com
+
 Create a new repository on GitHub.
 In the Command prompt, change the current working directory to your local project.
 Initialize the local directory as a Git repository.
