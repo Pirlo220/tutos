@@ -8,6 +8,8 @@ There are several states of Git dat:
 
 Configuring 
 
+> git version
+
 > git config --global user.name "Your Name"
 > git config --global user.email "YourEmail@mm.com"
 > git config --global --list (In order to confirm)
