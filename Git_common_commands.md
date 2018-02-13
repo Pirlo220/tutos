@@ -15,7 +15,7 @@ Configuring
 > git config --global --list (In order to confirm)
 
 Starting a fresh project
-> git init fresh-project (creates a folder named "fresh-project"
+> git init fresh-project (creates a folder named "fresh-project" 
 
 Create a complete copy of a repository:
 > git clone https://your.git.repository.com
