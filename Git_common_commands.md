@@ -66,6 +66,8 @@ Push the branch to your remote repository, so others can use it:
 
 Fetch and merge changes on the remote server to your working directory:	
 >git pull
+or
+>git pull origin master
 
 To merge a different branch into your active branch:	
 >git merge branchname
