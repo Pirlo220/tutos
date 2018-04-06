@@ -52,6 +52,9 @@ Push the changes in your local repository to GitHub.
 >git push origin master
 Pushes the changes in your local repository up to the remote repository you specified as the origin
 
+It is possible to do an inline add and commit if we combine the "a" and "m" parameter. This is only possible with files that are tracket by git (added previously or in the git index). This will add all the files in the staging area.
+>git commit -am "Adding more content"
+
 Create a new branch and switch to it:	
 >git checkout -b branchname
 
