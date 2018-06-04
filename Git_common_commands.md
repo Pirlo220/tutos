@@ -36,7 +36,7 @@ List the files modified since the last commit
 
 Add the files in your new local repository. This stages them for the first commit.
 >git add .
-Adds the files in the local repository and stages them for commit
+Adds the files in the local repository and stages them for commit. It also adds recursively the files in a tree structure.
 
 
 Commit the files that you've staged in your local repository.
