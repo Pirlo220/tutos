@@ -52,6 +52,13 @@ Push the changes in your local repository to GitHub.
 >git push origin master
 Pushes the changes in your local repository up to the remote repository you specified as the origin
 
+In order to back out your changes
+>git reset HEAD fileName.txt
+So this command unstaged the file
+
+If you want to leave the file as it was originally before your changes
+>git checkout -- fileName.txt
+
 It is possible to do an inline add and commit if we combine the "a" and "m" parameter. This is only possible with files that are tracket by git (added previously or in the git index. A way to know the files that are tracked is with command "git ls-files"). This will add all the files in the staging area:
 >git commit -am "Adding more content"
 
