@@ -38,6 +38,9 @@ Add the files in your new local repository. This stages them for the first commi
 >git add .
 Adds the files in the local repository and stages them for commit. It also adds recursively the files in a tree structure.
 
+To rename files:
+>git mv original_file_name new_file_name
+
 
 Commit the files that you've staged in your local repository.
 >git commit -m 'First commit'
