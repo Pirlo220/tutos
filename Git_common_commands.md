@@ -75,6 +75,12 @@ Deleting a file that is not tracked by Git:
 
 Deleting a file that is tracked by Git:
 > git rm file_name.txt
+In order to unstage a deleted file that is not yet committed
+> git reset HEAD file_name.txt (but it does not restore the file, to do this just "checkout")
+> git checkout -- file_name.txt
+
+When you delete (deletions and renames) a file outside of the git commands (in the OS), you have to stage the changes
+> git add -A
 
 
 Create a new branch and switch to it:	
