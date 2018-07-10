@@ -70,6 +70,13 @@ If you want to leave the file as it was originally before your changes
 It is possible to do an inline add and commit if we combine the "a" and "m" parameter. This is only possible with files that are tracket by git (added previously or in the git index. A way to know the files that are tracked is with command "git ls-files"). This will add all the files in the staging area:
 >git commit -am "Adding more content"
 
+Deleting a file that is not tracked by Git:
+> rm file_name.txt
+
+Deleting a file that is tracked by Git:
+> git rm file_name.txt
+
+
 Create a new branch and switch to it:	
 >git checkout -b branchname
 
