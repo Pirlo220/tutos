@@ -82,6 +82,14 @@ In order to unstage a deleted file that is not yet committed
 When you delete (deletions and renames) a file outside of the git commands (in the OS), you have to stage the changes
 > git add -A
 
+Get the history
+> git log
+> git log --abbrev-commit --> abreviates the response in screen
+> git log --oneline --graph --decorate --> This is the most interesting
+> git log commitID_initial commitID_end --> prints a range of logs by the specified initial commit to the specified final commit.
+> git log -- filename.txt --> prints the activity of the filename.txt
+
+> git show commitID --> show all the information of a specified commit
 
 Create a new branch and switch to it:	
 >git checkout -b branchname
