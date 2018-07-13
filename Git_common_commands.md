@@ -91,6 +91,12 @@ Get the history
 
 > git show commitID --> show all the information of a specified commit
 
+Create alias for long commands
+> git log --all --graph --decorate --oneline --> git config --global alias.nameOFtheCommandYourAreInventing "log --all --graph --decorate --oneline"
+>git nameOFtheCommandYourAreInventing
+
+In order to modify an alias you can open .gitconfig file and edit all the aliases you've created.
+
 Create a new branch and switch to it:	
 >git checkout -b branchname
 
