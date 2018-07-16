@@ -117,6 +117,11 @@ or
 To merge a different branch into your active branch:	
 >git merge branchname
 
+Ignore files
+> create .gitignore file
+> add within the .gitignore file the file or files that we want to ignore (with the name of the file or with a pattern or folder)
+> commit .gitignore file
+
 If you mess up, you can replace the changes in your working tree with the last content in head:
 Changes already added to the index, as well as new files, will be kept.
 >git checkout -- filename
