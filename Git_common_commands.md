@@ -97,6 +97,9 @@ Create alias for long commands
 
 In order to modify an alias you can open .gitconfig file and edit all the aliases you've created.
 
+Synchronise local folder with remote repository
+> git pull origin master      
+
 Create a new branch and switch to it:	
 >git checkout -b branchname
 
