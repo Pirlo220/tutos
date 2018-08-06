@@ -100,7 +100,8 @@ In order to modify an alias you can open .gitconfig file and edit all the aliase
 Synchronise local folder with remote repository
 > git pull origin master
 
-Visual Diff/Merge Tool --> P4Merge
+Visual Diff/Merge Tool --> P4Merge (https://www.perforce.com/downloads)
+Install only Visual Merge Tool (P4Merge)
 
 Create a new branch and switch to it:	
 >git checkout -b branchname
