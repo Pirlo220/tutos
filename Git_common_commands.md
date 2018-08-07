@@ -102,6 +102,9 @@ Synchronise local folder with remote repository
 
 Visual Diff/Merge Tool --> P4Merge (https://www.perforce.com/downloads)
 Install only Visual Merge Tool (P4Merge)
+Access P4Merge from any command line:
+> We have to add the path to the installed P4Merge to "path" environment variable
+> Then in the git bash we can type "p4merge"
 
 Create a new branch and switch to it:	
 >git checkout -b branchname
