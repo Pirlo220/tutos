@@ -106,6 +106,16 @@ Access P4Merge from any command line:
 > We have to add the path to the installed P4Merge to "path" environment variable
 > Then in the git bash we can type "p4merge"
 
+Configure P4Merge as a diff tool and merge resolution tool
+>git config --global merge.tool p4merge
+>git config --global mergetool.p4merge "C:/Program Files/Perforce/p4merge.exe"
+>git config --global mergetool.prompt false
+>git config --global diff.tool p4merge
+>git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+>git config --global difftool.prompt false
+To checkout what we've done:
+>git config --global --list
+
 Create a new branch and switch to it:	
 >git checkout -b branchname
 
