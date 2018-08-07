@@ -108,11 +108,17 @@ Access P4Merge from any command line:
 
 Configure P4Merge as a diff tool and merge resolution tool
 >git config --global merge.tool p4merge
+
 >git config --global mergetool.p4merge "C:/Program Files/Perforce/p4merge.exe"
+
 >git config --global mergetool.prompt false
+
 >git config --global diff.tool p4merge
+
 >git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+
 >git config --global difftool.prompt false
+
 To checkout what we've done:
 >git config --global --list
 
