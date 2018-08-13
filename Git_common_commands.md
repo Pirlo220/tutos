@@ -125,8 +125,8 @@ To checkout what we've done:
 >git config --global --list
 
 Comparing working directory and staging area
-> git diff --> Git will tell you the differences
-> git difftool --> If you have a tool configured git will launch that tool to see the changes.
+>git diff --> Git will tell you the differences
+>git difftool --> If you have a tool configured git will launch that tool to see the changes.
 
 ## Branches
 Create a new branch and switch to it:	
