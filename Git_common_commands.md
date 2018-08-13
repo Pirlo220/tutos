@@ -81,7 +81,7 @@ In order to unstage a deleted file that is not yet committed
 
 When you delete (deletions and renames) a file outside of the git commands (in the OS), you have to stage the changes
 > git add -A
-
+## Using logs
 Get the history
 > git log
 > git log --abbrev-commit --> abreviates the response in screen
@@ -99,6 +99,8 @@ In order to modify an alias you can open .gitconfig file and edit all the aliase
 
 Synchronise local folder with remote repository
 > git pull origin master
+
+## Using P4Merge as a Diff Tool
 
 Visual Diff/Merge Tool --> P4Merge (https://www.perforce.com/downloads)
 Install only Visual Merge Tool (P4Merge)
@@ -122,6 +124,11 @@ Configure P4Merge as a diff tool and merge resolution tool
 To checkout what we've done:
 >git config --global --list
 
+Comparing working directory and staging area
+> git diff --> Git will tell you the differences
+> git difftool --> If you have a tool configured git will launch that tool to see the changes.
+
+## Branches
 Create a new branch and switch to it:	
 >git checkout -b branchname
 
