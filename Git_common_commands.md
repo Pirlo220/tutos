@@ -128,6 +128,9 @@ Comparing working directory and staging area
 >git diff --> Git will tell you the differences
 >git difftool --> If you have a tool configured git will launch that tool to see the changes.
 
+>git diff HEAD --> Git will compare the difference between the working directory and the last commit on this branch.
+>git difftool HEAD --> The same but with the tool configured
+
 ## Branches
 Create a new branch and switch to it:	
 >git checkout -b branchname
